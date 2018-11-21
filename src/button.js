@@ -1,1 +1,1 @@
-export default 'button'
+module.exports = 'button'
