@@ -1,7 +1,11 @@
 import header from './header'
 import body from './body'
-import footer from './footer'
+
+const getFooter = () => import('./footer')
 
 console.log(header)
 console.log(body)
-console.log(footer)
+
+getFooter().then(module => {
+    console.log(module.default)
+})
