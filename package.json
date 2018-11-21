@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server",
+    "dev:build": "webpack",
+    "dev:server": "webpack-dev-server",
     "dev:debug": "npm run dev -- --mode development --inspect --debug-brk",
     "debug:webpack": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js --mode development"
   },
